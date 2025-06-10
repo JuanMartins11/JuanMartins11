@@ -1,7 +1,7 @@
 ## Olá, Seja muito bem-vindo👋
 
 - 🔭 Em busca de primeiro estágio em Desenvolvimento de Software
-- 📖 Estudando Ciência da Computação - Universidade Federeal do Pará
+- 📖 Estudando Ciência da Computação - Universidade Federal do Pará
 - 👨🏽‍💻 Graduado em Redes de Computadores
 - 📩 Meu email principal: juanctmartins117@gmail.com
 
