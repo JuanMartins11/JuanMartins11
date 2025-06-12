@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Nosso Amor</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #fff0f5;
+      color: #333;
+      overflow-x: hidden;
+    }
+
+    header {
+      background-color: #ffccd5;
+      padding: 2rem;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 1.5rem;
+      color: #b30059;
+    }
+
+    #contador {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+      margin: 2rem auto;
+      max-width: 700px;
+    }
+
+    .tempo {
+      background-color: #ffe6eb;
+      padding: 1rem 1.5rem;
+      border-radius: 12px;
+      font-size: 1.2rem;
+      color: #b30059;
+      text-align: center;
+      min-width: 90px;
+    }
+
+    .mensagem {
+      margin: 2rem auto;
+      padding: 1.5rem;
+      max-width: 700px;
+      background-color: #fffafa;
+      border-left: 6px solid #ff99aa;
+      border-radius: 10px;
+      font-size: 1rem;
+      line-height: 1.2;
+    }
+
+    .galeria {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    .foto {
+      background-color: #fff;
+      border: 1px solid #ffc2d1;
+      border-radius: 10px;
+      padding: 10px;
+      box-shadow: 2px 2px 6px rgba(0,0,0,0.1);
+    }
+
+    .foto img {
+      width: 100%;
+      border-radius: 8px;
+      object-fit: cover;
+    }
+
+    .legenda {
+      text-align: center;
+      margin-top: 0.5rem;
+      color: #990033;
+      font-style: italic;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #ffe6eb;
+      margin-top: 4rem;
+      font-size: 1rem;
+    }
+
+    /* Corações flutuando */
+    .heart {
+      position: fixed;
+      width: 20px;
+      height: 20px;
+      background: red;
+      transform: rotate(45deg);
+      animation: flutuar 8s linear infinite;
+      opacity: 0.7;
+      z-index: 0;
+    }
+
+    .heart::before,
+    .heart::after {
+      content: "";
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background: red;
+      border-radius: 50%;
+    }
+
+    .heart::before {
+      top: -10px;
+      left: 0;
+    }
+
+    .heart::after {
+      left: -10px;
+      top: 0;
+    }
+
+    @keyframes flutuar {
+      0% {
+        transform: translateY(100vh) rotate(45deg);
+        opacity: 0;
+      }
+      50% {
+        opacity: 0.7;
+      }
+      100% {
+        transform: translateY(-10vh) rotate(45deg);
+        opacity: 0;
+      }
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+
+      .tempo {
+        min-width: 80px;
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Desde há melhor decisão da minha vida, são...</h1>
+  </header>
+
+  <div id="contador">
+    <div class="tempo" id="anos">0 anos</div>
+    <div class="tempo" id="meses">0 meses</div>
+    <div class="tempo" id="dias">0 dias</div>
+    <div class="tempo" id="horas">0h</div>
+    <div class="tempo" id="minutos">0min</div>
+    <div class="tempo" id="segundos">0s</div>
+  </div>
+
+  <section class="mensagem">
+    <!-- Sua mensagem especial aqui -->
+    <p style="text-align: justify;"></p>
+    <p>Esse é exatamente o tempo desde o pedido de namoro lá em 2019...</p>
+    <p style="text-align: justify;">
+     O pedido que mudou as nossas vidas e que desde então vem me fazendo completamente feliz. Muito obrigado mesmo por todos esses anos que você está ao meu lado, me sinto tão bem em saber que mesmo após esses 5 anos, esse tempo representa apenas uma pequena parte de toda uma vida que vamos viver juntos.
+     Eu prometo que todos os dias eu vou continuar buscando sempre ser a minha melhor versão
+     para você, quero que saiba que o teu sorriso é melhor presente que eu posso receber todos os dias😍❤️.
+    </p>
+    <p style="text-align: justify;">
+     Depois de todo esse tempo juntos, e a cada dia desde 9 de outubro de 2019 o meu amor por você
+     está cada dia maior, e eu nem sei como isso é possível kkk. Mas a minha certeza, é que vai continuar
+     assim por toda a minha vida, eu tenho muita sorte mesmo, pois na única vida que eu tenho, eu pude
+     encontrar o amor da minha vida e ainda bem que não demorou pra vir. Assim, vamos conseguir viver
+     grandes momentos da nossa vida juntos❤️. 
+    </p>
+      <p style="text-align: justify;">
+        Esse é o nosso primeiro dia dos namorados como noivos, e eu estou muito feliz mesmo, por que eu sei
+        estamos no caminho certo. Eu te amo muito mesmo meu amor, e cada parte de mim sempre vai querer você,
+        Felis Dia dos Namorados meu amor😍❤️.
+      </p>
+  </section>
+
+  <section class="galeria">
+    <div class="foto">
+      <img src="fotos/primeiravezsaindo.jpg" alt="Foto 1">
+      <div class="legenda">Nosso primeiro passeio juntos❤️</div>
+    </div>
+    <div class="foto">
+      <img src="fotos/PrimeiroAniversario.jpg" alt="Foto 2">
+      <div class="legenda">Primeiro de muitos aniversários com você💕.</div>
+    </div>
+    <div class="foto">
+      <img src="fotos/UniaoEmCasa.jpg" alt="Foto 3">
+      <div class="legenda">Amo muito essa nossa foto😍</div>
+    </div>
+    <div class="foto">
+      <img src="fotos/Pordosol.jpg" alt="Foto 4">
+      <div class="legenda">Essa aqui é muito especial💕.</div>
+    </div>
+    <div class="foto">
+      <img src="fotos/Fotoquemaisamodoca.jpg" alt="Foto 6">
+      <div class="legenda">Essa é a minha foto preferida😍❤️</div>
+    </div>
+    <div class="foto">
+      <img src="fotos/uniaovilamagua.jpg" alt="Foto 5"> 
+      <div class="legenda">Quero você sempre ao meu lado💕.</div>
+    </div>
+    <div class="foto">
+      <img src="fotos/Nossonoivado.jpg" alt="Foto 8">
+      <div class="legenda">Momento que vai ficar para sempre nos nossos corações❤️.</div>
+    </div>
+    <div class="foto">
+      <img src="fotos/mulhermaislinda.jpg" alt="Foto 7">
+      <div class="legenda">A mulher mais linda desse mundo😍❤️</div>
+    </div>
+  </section>
+
+  <footer>
+    Feito com muito amor para a minha princesa💖
+  </footer>
+
+  <script>
+    const dataInicial = new Date('2019-10-09T00:00:00');
+
+    function atualizarContador() {
+      const agora = new Date();
+      let anos = agora.getFullYear() - dataInicial.getFullYear();
+      let meses = agora.getMonth() - dataInicial.getMonth();
+      let dias = agora.getDate() - dataInicial.getDate();
+
+      if (dias < 0) {
+        meses--;
+        const mesAnterior = new Date(agora.getFullYear(), agora.getMonth(), 0);
+        dias += mesAnterior.getDate();
+      }
+
+      if (meses < 0) {
+        anos--;
+        meses += 12;
+      }
+
+      const diff = agora - dataInicial;
+      const segundosTotais = Math.floor(diff / 1000);
+      const horas = Math.floor((segundosTotais % (60 * 60 * 24)) / 3600);
+      const minutos = Math.floor((segundosTotais % 3600) / 60);
+      const segundos = segundosTotais % 60;
+
+      document.getElementById('anos').textContent = `${anos} ano${anos !== 1 ? 's' : ''}`;
+      document.getElementById('meses').textContent = `${meses} mês${meses !== 1 ? 'es' : ''}`;
+      document.getElementById('dias').textContent = `${dias} dia${dias !== 1 ? 's' : ''}`;
+      document.getElementById('horas').textContent = `${horas}h`;
+      document.getElementById('minutos').textContent = `${minutos}min`;
+      document.getElementById('segundos').textContent = `${segundos}s`;
+    }
+
+    setInterval(atualizarContador, 1000);
+    atualizarContador();
+
+    // Criar corações flutuando
+    function criarCoracao() {
+      const coracao = document.createElement('div');
+      coracao.classList.add('heart');
+      coracao.style.left = `${Math.random() * 100}vw`;
+      coracao.style.animationDuration = `${5 + Math.random() * 5}s`;
+      document.body.appendChild(coracao);
+      setTimeout(() => coracao.remove(), 10000);
+    }
+
+    setInterval(criarCoracao, 500);
+  </script>
+</body>
+</html>
